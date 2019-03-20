@@ -1,4 +1,4 @@
 var gulp = require('gulp');
-gulp.task('mytask', function() {
+gulp.task('mytask', async function() {
     console.log('Привет, я таск!');
 });
