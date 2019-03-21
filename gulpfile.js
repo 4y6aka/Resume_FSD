@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglifyjs');
 
 gulp.task('sass', async function() {
     return gulp.src('source/scss/**/*.sass')
@@ -12,6 +14,16 @@ gulp.task('sass', async function() {
 gulp.task('scripts', function() {
     return gulp.src(['source/js/script.js', 'source/libs/**/*.js'])
         .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('libs', function() {
+    return gulp.src([
+        // 'bower-components/jquery/dist/jquery.min.js',
+        'bower-components/magnific-popup/dist/jquery.magnific-popup.min.js'
+        ])
+        .pipe(concat('libs.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('source/js'));
 });
 
 gulp.task('code', function() {
