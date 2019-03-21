@@ -45,4 +45,4 @@ gulp.task('watch', function() {
     gulp.watch('source/*.html', gulp.parallel('code'));
     gulp.watch(['source/js/script.js', 'source/libs/**/*.js'], gulp.parallel('scripts'));
 });
-gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('sass', 'libs', 'browser-sync', 'watch'));
