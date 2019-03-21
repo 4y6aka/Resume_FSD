@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1e2306-9b91-4f6b-871a-6c94d706f84d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="56" />
+            <state relative-caret-position="-30">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -189,12 +189,12 @@
       <workItem from="1552918412708" duration="8377000" />
       <workItem from="1552997577124" duration="4631000" />
       <workItem from="1553093369790" duration="5299000" />
-      <workItem from="1553162063494" duration="8520000" />
+      <workItem from="1553162063494" duration="8702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26827000" />
+    <option name="totallyTimeSpent" value="27009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="347" y="3" width="1019" height="688" extended-state="0" />
@@ -362,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="56" />
+        <state relative-caret-position="-30">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
         </state>
       </provider>

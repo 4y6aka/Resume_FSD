@@ -18,8 +18,8 @@ gulp.task('scripts', function() {
 
 gulp.task('libs', function() {
     return gulp.src([
-        // 'bower-components/jquery/dist/jquery.min.js',
-        'bower-components/magnific-popup/dist/jquery.magnific-popup.min.js'
+        'source/libs/jquery/dist/jquery.min.js',
+        'source/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
