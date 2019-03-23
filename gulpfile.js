@@ -8,6 +8,7 @@ var rename = require('gulp-rename');
 var del = require('del');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var cache = require('gulp-cache');
 
 gulp.task('sass', async function() {
     return gulp.src('source/scss/**/*.sass')
