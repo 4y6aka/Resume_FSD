@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglifyjs');
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
+var del = require('del');
 
 gulp.task('sass', async function() {
     return gulp.src('source/scss/**/*.sass')
@@ -48,6 +49,10 @@ gulp.task('browser-sync', function() {
             },
             notify: false
         });
+});
+
+gulp.task('clean', async function() {
+    return del.sync('dist');
 });
 
 gulp.task('prebuild', async function() {
