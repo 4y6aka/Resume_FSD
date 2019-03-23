@@ -98,3 +98,4 @@ gulp.task('watch', function() {
     gulp.watch(['source/js/script.js', 'source/libs/**/*.js'], gulp.parallel('scripts'));
 });
 gulp.task('default', gulp.parallel('css-libs', 'sass', 'libs', 'browser-sync', 'watch'));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass', 'libs'))
