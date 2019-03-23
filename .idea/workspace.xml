@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea1e2306-9b91-4f6b-871a-6c94d706f84d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-    </list>
+    <list default="true" id="ea1e2306-9b91-4f6b-871a-6c94d706f84d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -216,12 +214,12 @@
       <workItem from="1553093369790" duration="5299000" />
       <workItem from="1553162063494" duration="14370000" />
       <workItem from="1553182593837" duration="298000" />
-      <workItem from="1553332801195" duration="2892000" />
+      <workItem from="1553332801195" duration="2991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35867000" />
+    <option name="totallyTimeSpent" value="35966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="467" y="41" width="951" height="688" extended-state="0" />
