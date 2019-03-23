@@ -9,10 +9,12 @@ var del = require('del');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var cache = require('gulp-cache');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', async function() {
     return gulp.src('source/scss/**/*.sass')
         .pipe(sass())
+        .pipe(autoprefixer(['last 15 versions','> 1%', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('source/css'))
         .pipe(browserSync.reload({stream:true}))
 });
@@ -85,6 +87,10 @@ gulp.task('prebuild', async function() {
     var buildHtml = gulp.src('source/*.html')
         .pipe(gulp.dest('dist'))
 });
+
+gulp.task('clear', function (callback) {
+    return cache.clearAll();
+})
 
 gulp.task('watch', function() {
     gulp.watch('source/scss/**/*.sass', gulp.parallel('sass'));
