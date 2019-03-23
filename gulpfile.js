@@ -6,6 +6,8 @@ var uglify = require('gulp-uglifyjs');
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var del = require('del');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 gulp.task('sass', async function() {
     return gulp.src('source/scss/**/*.sass')
@@ -53,6 +55,17 @@ gulp.task('browser-sync', function() {
 
 gulp.task('clean', async function() {
     return del.sync('dist');
+});
+
+gulp.task('img', function() {
+    return gulp.src('source/img/**/*')
+        .pipe(cache(imagemin ({
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        })))
+        .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('prebuild', async function() {
